@@ -5,8 +5,8 @@
   "homepage": "staking",
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "start public/1.log && react-scripts start",
+    "build": "start public/1.log && react-scripts build",
     "test": "react-scripts test --testPathIgnorePatterns=/src/__tests__/config/",
     "test:config": "react-scripts test --testPathPattern=/src/__tests__/config/",
     "integration-test": "start-server-and-test 'serve -s build -p 3000' http://localhost:3000 'cypress run'",
